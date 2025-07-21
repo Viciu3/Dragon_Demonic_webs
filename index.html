@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Demonik</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-container" id="loader">
+        <div class="loader">
+            <div class="light"></div>
+            <div class="black_overlay"></div>
+        </div>
+        <div class="loading-text">Dragon Demonik</div>
+    </div>
+
+    <!-- Main Page -->
+    <div class="main-content" id="main" style="display: none;">
+        <!-- Theme Toggle Button -->
+        <label for="themeToggle" class="themeToggle st-sunMoonThemeToggleBtn" type="checkbox">
+            <input type="checkbox" id="themeToggle" class="themeToggleInput" />
+            <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor" stroke="none">
+                <mask id="moon-mask">
+                    <rect x="0" y="0" width="20" height="20" fill="white"></rect>
+                    <circle cx="11" cy="3" r="8" fill="black"></circle>
+                </mask>
+                <circle class="sunMoon" cx="10" cy="10" r="8" mask="url(#moon-mask)"></circle>
+                <g>
+                    <circle class="sunRay sunRay1" cx="18" cy="10" r="1.5"></circle>
+                    <circle class="sunRay sunRay2" cx="14" cy="16.928" r="1.5"></circle>
+                    <circle class="sunRay sunRay3" cx="6" cy="16.928" r="1.5"></circle>
+                    <circle class="sunRay sunRay4" cx="2" cy="10" r="1.5"></circle>
+                    <circle class="sunRay sunRay5" cx="6" cy="3.1718" r="1.5"></circle>
+                    <circle class="sunRay sunRay6" cx="14" cy="3.1718" r="1.5"></circle>
+                </g>
+            </svg>
+        </label>
+
+        <!-- Navigation Menu -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Cyber Card with SVG -->
+        <div class="container noselect">
+            <div class="canvas">
+                <div class="tracker tr-1"></div>
+                <div class="tracker tr-2"></div>
+                <div class="tracker tr-3"></div>
+                <div class="tracker tr-4"></div>
+                <div class="tracker tr-5"></div>
+                <div class="tracker tr-6"></div>
+                <div class="tracker tr-7"></div>
+                <div class="tracker tr-8"></div>
+                <div class="tracker tr-9"></div>
+                <div id="card">
+                    <div class="card-content">
+                        <div class="card-glare"></div>
+                        <div class="cyber-lines">
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                        <p id="prompt">HOVER ME</p>
+                        <div class="title">CYBER<br />CARD</div>
+                        <div class="glowing-elements">
+                            <div class="glow-1"></div>
+                            <div class="glow-2"></div>
+                            <div class="glow-3"></div>
+                        </div>
+                        <div class="subtitle">
+                            <span>INTERACTIVE</span>
+                            <span class="highlight">3D EFFECT</span>
+                        </div>
+                        <div class="card-particles">
+                            <span></span><span></span><span></span>
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="corner-elements">
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                        <div class="scan-line"></div>
+                        <!-- SVG in the center of the card -->
+                        <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="center-svg">
+                            <g style="order: -1;">
+                                <polygon transform="rotate(45 100 100)" stroke-width="1" stroke="#d3a410" fill="none" points="70,70 148,50 130,130 50,150" id="bounce"></polygon>
+                                <polygon transform="rotate(45 100 100)" stroke-width="1" stroke="#d3a410" fill="none" points="70,70 148,50 130,130 50,150" id="bounce2"></polygon>
+                                <polygon transform="rotate(45 100 100)" stroke-width="2" stroke="" fill="#414750" points="70,70 150,50 130,130 50,150"></polygon>
+                                <polygon stroke-width="2" stroke="" fill="url(#gradiente)" points="100,70 150,100 100,130 50,100"></polygon>
+                                <defs>
+                                    <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente">
+                                        <stop style="stop-color: #1e2026;stop-opacity:1" offset="20%"></stop>
+                                        <stop style="stop-color:#414750;stop-opacity:1" offset="60%"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <polygon transform="translate(20, 31)" stroke-width="2" stroke="" fill="#b7870f" points="80,50 80,75 80,99 40,75"></polygon>
+                                <polygon transform="translate(20, 31)" stroke-width="2" stroke="" fill="url(#gradiente2)" points="40,-40 80,-40 80,99 40,75"></polygon>
+                                <defs>
+                                    <linearGradient y2="100%" x2="0%" y1="-17%" x1="10%" id="gradiente2">
+                                        <stop style="stop-color: #d3a51000;stop-opacity:1" offset="20%"></stop>
+                                        <stop style="stop-color:#d3a51054;stop-opacity:1" offset="100%" id="animatedStop"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <polygon transform="rotate(180 100 100) translate(20, 20)" stroke-width="2" stroke="" fill="#d3a410" points="80,50 80,75 80,99 40,75"></polygon>
+                                <polygon transform="rotate(0 100 100) translate(60, 20)" stroke-width="2" stroke="" fill="url(#gradiente3)" points="40,-40 80,-40 80,85 40,110.2"></polygon>
+                                <defs>
+                                    <linearGradient y2="100%" x2="10%" y1="0%" x1="0%" id="gradiente3">
+                                        <stop style="stop-color: #d3a51000;stop-opacity:1" offset="20%"></stop>
+                                        <stop style="stop-color:#d3a51054;stop-opacity:1" offset="100%" id="animatedStop"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <polygon transform="rotate(45 100 100) translate(80, 95)" stroke-width="2" stroke="" fill="#ffe4a1" points="5,0 5,5 0,5 0,0" id="particles"></polygon>
+                                <polygon transform="rotate(45 100 100) translate(80, 55)" stroke-width="2" stroke="" fill="#ccb069" points="6,0 6,6 0,6 0,0" id="particles"></polygon>
+                                <polygon transform="rotate(45 100 100) translate(70, 80)" stroke-width="2" stroke="" fill="#fff" points="2,0 2,2 0,2 0,0" id="particles"></polygon>
+                                <polygon stroke-width="2" stroke="" fill="#292d34" points="29.5,99.8 100,142 100,172 29.5,130"></polygon>
+                                <polygon transform="translate(50, 92)" stroke-width="2" stroke="" fill="#1f2127" points="50,50 120.5,8 120.5,35 50,80"></polygon>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notification -->
+        <div class="notification">
+            <div class="notiglow"></div>
+            <div class="notiborderglow"></div>
+            <div class="notititle">Welcome to Dragon Demonik</div>
+            <div class="notibody">Explore the dark and fiery world of Dragon Demonik!</div>
+        </div>
+    </div>
+
+    <script>
+        // Redirect to main page after 5 seconds
+        setTimeout(() => {
+            document.getElementById('loader').style.display = 'none';
+            document.getElementById('main').style.display = 'block';
+        }, 5000);
+
+        // Theme toggle
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('change', () => {
+            document.body.classList.toggle('dark-theme');
+        });
+    </script>
+</body>
+</html>
